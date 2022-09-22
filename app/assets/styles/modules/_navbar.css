@@ -1,0 +1,26 @@
+.navbar {
+  font-size: 1em;
+  justify-content: space-between;
+  &&--margin-top-55 {
+    margin-top: 3.438rem;
+  }
+  &&--margin-bottom-55 {
+    margin-bottom: 3.438rem;
+  }
+  &__links {
+    max-width: 18.75rem;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__img {
+    justify-self: center;
+    align-self: center;
+  }
+  &__lang {
+    width: 6.25rem;
+    height: 1.875rem;
+    justify-self: end;
+    border: #333333 solid 1px;
+    border-radius: 14px;
+  }
+}

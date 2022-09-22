@@ -1,0 +1,10 @@
+@import "normalize.css";
+@import "animate.css";
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Work+Sans:wght@200;400&display=swap");
+@import "base/_global.css";
+@import "modules/_container.css";
+@import "modules/_navbar.css";
+@import "modules/_flex.css";
+@import "modules/_grid.css";
+@import "modules/_mainvisual.css";
+@import "modules/_section.css";
