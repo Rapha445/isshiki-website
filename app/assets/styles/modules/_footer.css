@@ -1,0 +1,15 @@
+.footer {
+  position: relative;
+  &__logo {
+    max-width: 7.813rem;
+    display: block;
+    margin: auto;
+    padding-bottom: 1.875rem;
+  }
+  &__bck {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

@@ -1,15 +1,25 @@
 .section {
+  position: relative;
+  &--margin-top-xl {
+    margin-top: 20rem;
+  }
   &--margin-top-l {
     margin-top: 16.875rem;
   }
   &--margin-top-m {
-    margin-top: 14.375rem;
+    margin-top: 30rem;
   }
   &--margin-top-s {
     margin-top: 12.5rem;
   }
-  &--background {
-    background-image: url("../../images/contact/bg-gradient.png");
+  &--padding-bottom-l {
+    padding-bottom: 15.625rem;
+  }
+  &--margin-bottom-s {
+    margin-bottom: 5rem;
+  }
+  &--margin-bottom-xs {
+    margin-bottom: 4.563rem;
   }
   &__title {
     font-family: "Bodoni Moda", serif;
@@ -29,6 +39,9 @@
     &--margin-bottom-s {
       margin-bottom: 1.2rem;
     }
+    &--margin-bottom-l {
+      margin-bottom: 7.188rem;
+    }
   }
   &__more {
     &--justify-right {
@@ -43,5 +56,58 @@
       align-self: center;
       margin-left: 0.625rem;
     }
+  }
+  &__background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__img {
+    position: absolute;
+    &--l {
+      max-width: 27.75rem;
+    }
+  }
+  &__imgdisplay {
+    &--margin-bottom-m {
+      margin-bottom: 7.5rem;
+    }
+    &__img1 {
+      max-width: 25rem;
+      grid-row: 1;
+      grid-column: 1;
+      padding-bottom: 6.875rem;
+    }
+    &__img2 {
+      max-width: 25rem;
+      grid-row: 1;
+      grid-column: 1;
+      justify-self: flex-end;
+      align-self: flex-end;
+    }
+    &__img3 {
+      max-width: 17.5rem;
+      grid-row: 1;
+      grid-column: 1;
+      align-self: flex-end;
+      margin-left: 5.625rem;
+      padding-bottom: 3.75rem;
+    }
+  }
+  &__link {
+    display: block;
+    margin: auto;
+    &--s {
+      width: 1.875rem;
+    }
+    &--m {
+      width: 19.063rem;
+    }
+  }
+  &__contact {
+    height: 3.75rem;
+    border: #333333 solid 1px;
+    border-radius: 30px;
   }
 }

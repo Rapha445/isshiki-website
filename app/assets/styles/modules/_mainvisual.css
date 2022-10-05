@@ -1,3 +1,6 @@
 .mainvisual {
   height: 47.5rem;
+  &__img {
+    max-width: 19.063rem;
+  }
 }

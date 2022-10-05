@@ -7,7 +7,7 @@
     <title>みゆ一色</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container container--padding">
         <nav class="navbar grid grid--2column navbar--margin-top-55 navbar--margin-bottom-55">
             <ul class="navbar__links flex">
                 <li>ARTWORKS</li>
@@ -19,35 +19,29 @@
             </div>
         </nav>
         <h1 class="mainvisual flex flex--center-vertically flex--center-horizontally">
-            <img src="" alt="Miyu I">
+            <img class="mainvisual__img" src="./assets/images/logo_icon/logo.png" alt="Miyu I">
         </h1>
     </header>
     <main>
-        <nav class="container navbar grid grid--3column navbar--margin-top-55 navbar--margin-bottom-55">
-            <ul class="navbar__links flex">
-                <li>ARTWORKS</li>
-                <li>NEWS</li>
-                <li>CONTACT</li>
-            </ul>
-            <img class="navbar__img" src="" alt="Miyu I">
-            <div class="navbar__lang flex flex--center-vertically flex--center-horizontally">
-                <p>JP / EN</p>
-            </div>
-        </nav>
-        <section class="container section section--background section--margin-top-l">
+        <section class="section section--margin-top-l section--padding-bottom-l flex">
+            <img class="section__background" src="./assets/images/contact/bg-gradient.png" alt="">
+            <div class="container">
             <h2 class="section__title section__title--margin-bottom-s">Concept</h2>
             <p class="section__text section__text--margin-bottom-s">こちらにテキストが入ります。テキストが入ります。</p>
             <p class="section__text section__text--margin-bottom-s">こちらにテキストが入ります。テキストが入ります。</p>
             <p class="section__text section__text--margin-bottom-s">こちらにテキストが入ります。テキストが入ります。</p>
             <p class="section__text section__text--margin-bottom-s">こちらにテキストが入ります。</p>
-            <p class="section__text">テキストが入ります。(100分字以内)</p>
-            <img src="" alt="">
+            <p class="section__text section__text--margin-bottom-l">テキストが入ります。(100分字以内)</p>
+            <img class="section__img section__img--l flex--center-horizontally" src="./assets/images/top/concept-img.jpg" alt="Drawing of a woman">
+        </div>
         </section>
         <section class="container container--width-620 section section--margin-top-m">
             <h2 class="section__title section__title--margin-bottom-m">Artworks</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div class="section__imgdisplay grid section__imgdisplay--margin-bottom-m">
+            <img class="section__imgdisplay__img1" src="./assets/images/top/img-bg01.jpg" alt="">
+            <img class="section__imgdisplay__img2" src="./assets/images/top/img_bg03.jpg" alt="">
+            <img class="section__imgdisplay__img3" src="./assets/images/top/bg-img02.jpg" alt="">
+        </div>
             <div class="section__more section__more--justify-right flex">
             <p>VIEW  MORE</p>
             <div class="section__more__line"></div>
@@ -71,25 +65,28 @@
                 <p>VIEW  MORE</p>
                 <div class="section__more__line"></div>
         </section>
-        <section class="container">
-            <h2 class="section__title">Contact</h2>
-            <div>
-                <a href="">CONTACT FORM</a>
-            </div>
-            <a href="">
-                <img src="" alt="Instagram">
+        <section class="section section--margin-top-xl container">
+            <h2 class="section__title section__title--margin-bottom-s">Contact</h2>
+                <a class="section__link section__link--m" href="">
+                    <div class="section__contact flex flex--center-vertically flex--center-horizontally section--margin-bottom-s">
+                        <p>CONTACT FORM</p>
+                    </div>
+                </a>
+            <a class="section__link section__link--s" href="">
+                <img class="section--margin-bottom-s" src="./assets/images/logo_icon/instagram.svg" alt="">
             </a>
         </section>
     </main>
-    <footer class="container">
+    <footer class="footer container">
         <nav>
-            <ul class="navbar__links flex">
+            <ul class="navbar__links navbar__links--center flex section--margin-bottom-xs">
                 <li>ARTWORKS</li>
                 <li>NEWS</li>
                 <li>CONTACT</li>
             </ul>
         </nav>
-        <img src="" alt="Miyu I">
+        <img class="footer__logo" src="./assets/images/logo_icon/logo.png" alt="Miyu I">
+        <img class="footer__bck" src="./assets/images/contact/bg-gradient.png" alt="">
     </footer>
     
 </body>
