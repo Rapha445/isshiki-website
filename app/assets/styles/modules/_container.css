@@ -1,4 +1,12 @@
 .container {
-  margin-left: 3.75rem;
-  margin-right: 3.75rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  &--width-620 {
+    max-width: 38.75rem;
+  }
+  &--width-475 {
+    max-width: 29.688rem;
+  }
 }

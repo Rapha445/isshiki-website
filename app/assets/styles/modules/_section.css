@@ -8,6 +8,9 @@
   &--margin-top-s {
     margin-top: 12.5rem;
   }
+  &--background {
+    background-image: url("../../images/contact/bg-gradient.png");
+  }
   &__title {
     font-family: "Bodoni Moda", serif;
     font-size: 2.2em;
@@ -28,7 +31,12 @@
     }
   }
   &__more {
-    justify-content: flex-end;
+    &--justify-right {
+      justify-content: flex-end;
+    }
+    &--justify-center {
+      justify-content: center;
+    }
     &__line {
       border: 0.5px solid #333333;
       width: 3.75rem;
