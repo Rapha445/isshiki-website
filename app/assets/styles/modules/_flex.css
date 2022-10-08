@@ -3,7 +3,16 @@
   &--center-vertically {
     align-items: center;
   }
+  &--end-vertically {
+    align-items: flex-end;
+  }
   &--center-horizontally {
     justify-content: center;
+  }
+  &--end-horizontally {
+    justify-content: flex-end;
+  }
+  &--space-between {
+    justify-content: space-between;
   }
 }

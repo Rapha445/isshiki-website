@@ -4,19 +4,8 @@
   position: fixed;
   top: 0;
   width: calc(100vw - 7.5rem);
-  &&--margin-top-55 {
-    margin-top: 3.438rem;
-  }
-  &&--margin-bottom-55 {
-    margin-bottom: 3.438rem;
-  }
   &__links {
     max-width: 18.75rem;
-    justify-content: space-between;
-    align-items: flex-end;
-    &--center {
-      margin: auto;
-    }
   }
   &__img {
     justify-self: center;

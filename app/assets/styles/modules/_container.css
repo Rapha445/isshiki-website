@@ -1,14 +1,41 @@
 .container {
+  margin-left: auto;
+  margin-right: auto;
   &--padding {
     padding-left: 3.75rem;
     padding-right: 3.75rem;
   }
-  margin-left: auto;
-  margin-right: auto;
-  &--width-620 {
+  &--width-s {
+    max-width: 29.688rem;
+  }
+  &--width-m {
     max-width: 38.75rem;
   }
-  &--width-475 {
-    max-width: 29.688rem;
+  &--margin-top-xs {
+    margin-top: 3.438rem;
+  }
+  &--margin-top-s {
+    margin-top: 12.5rem;
+  }
+  &--margin-top-m {
+    margin-top: 16.875rem;
+  }
+  &--margin-top-l {
+    margin-top: 20rem;
+  }
+  &--margin-top-xl {
+    margin-top: 30rem;
+  }
+  &--margin-bottom-xs {
+    margin-bottom: 3.438rem;
+  }
+  &--margin-bottom-s {
+    margin-bottom: 4.563rem;
+  }
+  &--margin-bottom-m {
+    margin-bottom: 5rem;
+  }
+  &--padding-bottom-l {
+    padding-bottom: 15.625rem;
   }
 }

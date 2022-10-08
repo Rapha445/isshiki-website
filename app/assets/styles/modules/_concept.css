@@ -1,0 +1,6 @@
+.concept {
+  &__img {
+    position: absolute;
+    max-width: 27.75rem;
+  }
+}
