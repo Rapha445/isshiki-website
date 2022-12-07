@@ -23,10 +23,6 @@ class RunAfterCompile {
         compiler.hooks.done.tap('Copy images', function () {
             fse.copySync('./app/assets/images', './dist/assets/images')
         })  // change to docs for GitHub
-        compiler.hooks.done.tap('Copy PHP', function () {
-            fse.copySync('./app/assets/php', './dist/assets/php')
-        }) // change to docs for GitHub
-        
     }
 }
 
