@@ -1,5 +1,9 @@
+/*gives a flex property to elements, with different option for alignment*/
 .flex {
   display: flex;
+  &--column-flex {
+    flex-direction: column;
+  }
   &--center-vertically {
     align-items: center;
   }

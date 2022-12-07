@@ -1,0 +1,23 @@
+/* defines element sizes for the contact page*/
+.contact {
+  &__img {
+    max-width: 15rem;
+  }
+  &__text {
+    max-width: 19.375rem;
+    margin: auto;
+  }
+  &__input {
+    border: none;
+    background-color: transparent;
+    color: #333333;
+    outline: none;
+    &:focus,
+    &:active {
+      border-bottom: 1px red solid;
+    }
+  }
+  &__label {
+    width: 11.25rem;
+  }
+}

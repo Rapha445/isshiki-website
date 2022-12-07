@@ -1,26 +1,69 @@
+/*general styles for sections and the content inside sections*/
 .section {
   position: relative;
 
+  /*general style for section title*/
   &__title {
     font-family: "Bodoni Moda", serif;
     font-size: 2.2em;
     text-align: center;
+    letter-spacing: 0.04em;
     &--margin-bottom-s {
       margin-bottom: 3rem;
     }
     &--margin-bottom-m {
       margin-bottom: 8.75rem;
     }
+    &--margin-bottom-l {
+      margin-bottom: 12.5rem;
+    }
   }
+  &__subtitle {
+    font-family: "Bodoni Moda", serif;
+    font-size: 1.375em;
+    text-align: left;
+    letter-spacing: 0.08em;
+    font-style: italic;
+    margin-bottom: 1.625rem;
+  }
+  /*general style for text*/
   &__text {
-    font-family: "Yu Gothic", sans-serif;
-    font-size: 1em;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 0.75em;
     text-align: center;
+    letter-spacing: 0.04em;
+    &--font-big {
+      font-size: 0.875em;
+    }
+    &--font-1em {
+      font-size: 1em;
+    }
+    &--font-bigger {
+      font-size: 1.125em;
+    }
+    &--space-l {
+      letter-spacing: 0.18em;
+    }
     &--margin-bottom-s {
       margin-bottom: 1.2rem;
     }
+    &--margin-bottom-m {
+      margin-bottom: 2.063rem;
+    }
     &--margin-bottom-l {
       margin-bottom: 7.188rem;
+    }
+    &--margin-top-s {
+      margin-top: 0.3125rem;
+    }
+    &--margin-top-l {
+      margin-top: 7.5rem;
+    }
+    &--align-left {
+      text-align: left;
+    }
+    &--line-height {
+      line-height: 1.5rem;
     }
   }
   &__more {
@@ -31,9 +74,13 @@
       margin-left: 0.625rem;
     }
   }
+  /*style for the display with 3 superposed images*/
   &__imgdisplay {
     &--margin-bottom-m {
       margin-bottom: 7.5rem;
+    }
+    &--margin-bottom-l {
+      margin-bottom: 12.5rem;
     }
     &__img1 {
       max-width: 25rem;
@@ -57,9 +104,11 @@
       padding-bottom: 3.75rem;
     }
   }
+  /*styles for links*/
   &__link {
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     &--s {
       width: 1.875rem;
     }
@@ -67,9 +116,24 @@
       width: 19.063rem;
     }
   }
+  /*styles for the contact button*/
   &__contact {
     height: 3.75rem;
     border: #333333 solid 1px;
     border-radius: 30px;
+    background-color: transparent;
+  }
+  /*styles for the order button (round) */
+  &__order {
+    background-color: #e2cfcf;
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &--blue {
+      background-color: #97c8c9;
+    }
   }
 }

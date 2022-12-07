@@ -1,6 +1,6 @@
 @import "normalize.css";
 @import "animate.css";
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Work+Sans:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Work+Sans:wght@200;400&display=swap");
 @import "base/_global.css";
 @import "modules/_container.css";
 @import "modules/_navbar.css";
@@ -12,3 +12,5 @@
 @import "modules/_footer.css";
 @import "modules/_background.css";
 @import "modules/_concept.css";
+@import "modules/_artworks.css";
+@import "modules/_contact.css";

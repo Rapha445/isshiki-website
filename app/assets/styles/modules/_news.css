@@ -1,3 +1,4 @@
+/* styles for the news preview*/
 .news {
   &--border-top {
     border-top: 1px solid #333333;
@@ -5,12 +6,11 @@
   &--border-bottom {
     border-bottom: 1px solid #333333;
   }
-  &--margin-bottom {
-    margin-bottom: 7.5rem;
-  }
+
   &__date {
     font-weight: 200;
     font-size: 1em;
+    letter-spacing: 0.14em;
     margin-top: 2.25rem;
     margin-bottom: 1.25rem;
     &__span {
@@ -20,6 +20,12 @@
   &__text {
     font-family: "Yu Gothic", sans-serif;
     font-size: 1em;
-    margin-bottom: 2.25rem;
+    letter-spacing: 0.18em;
+    &--margin-m {
+      margin-bottom: 2.25rem;
+    }
+    &--margin-s {
+      margin-bottom: 1.25rem;
+    }
   }
 }

@@ -1,3 +1,4 @@
+/* styles for the footer*/
 .footer {
   position: relative;
   &__logo {
@@ -5,5 +6,8 @@
     display: block;
     margin: auto;
     padding-bottom: 1.875rem;
+  }
+  &--border-top {
+    border-top: 1px solid #333333;
   }
 }

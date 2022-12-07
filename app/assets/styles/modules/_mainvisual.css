@@ -1,3 +1,4 @@
+/*sets size of the big logo on the main page*/
 .mainvisual {
   height: 47.5rem;
   &__img {

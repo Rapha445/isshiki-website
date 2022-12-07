@@ -1,6 +1,18 @@
+/*Set image in the background of section*/
 .background {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
+  /*Background image only fills a set height*/
+  &--fill {
+    height: 62.5rem;
+    width: 100vw;
+    position: relative;
+  }
+  &--from-top {
+    top: 0;
+    bottom: auto;
+    margin-top: -15rem;
+  }
 }

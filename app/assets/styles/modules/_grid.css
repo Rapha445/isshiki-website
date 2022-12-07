@@ -1,3 +1,4 @@
+/* quick styles for making a grid item*/
 .grid {
   display: grid;
   &--2column {

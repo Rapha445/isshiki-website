@@ -6,6 +6,8 @@ html {
 body {
   font-family: "Work Sans", sans-serif;
   color: #333333;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
   background-color: #ece9e3;
 }
 

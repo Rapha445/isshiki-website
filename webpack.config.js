@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const fse = require('fs-extra')
+const { functions } = require('lodash')
 
 const postCSSPlugins = [
     require('postcss-import'),
@@ -21,8 +22,11 @@ class RunAfterCompile {
     apply(compiler) {
         compiler.hooks.done.tap('Copy images', function () {
             fse.copySync('./app/assets/images', './dist/assets/images')
-            // change to docs for GitHub
-        })
+        })  // change to docs for GitHub
+        compiler.hooks.done.tap('Copy PHP', function () {
+            fse.copySync('./app/assets/php', './dist/assets/php')
+        }) // change to docs for GitHub
+        
     }
 }
 
@@ -101,42 +105,3 @@ if (currentTask == 'build') {
 }
 
 module.exports = config
-
-// const { watch } = require('fs')
-// const { Server } = require('https')
-// const path = require('path')
-// const postCSSPlugins = [
-//     require('postcss-import'),
-//     require('postcss-mixins'),
-//     require('postcss-simple-vars'),
-//     require('postcss-nested'),
-//     require('postcss-hexrgba'),
-//     require('autoprefixer')
-// ]
-
-// module.exports = {
-//     entry: './app/assets/scripts/App.js',
-//     output: {
-//         filename: 'bundled.js',
-//         path: path.resolve(__dirname, 'app')
-//     },
-//     devServer: {
-//         watchFiles: ['./app/**/*.html'],
-//         static: {
-//             directory: path.join(__dirname, 'app'),
-//             watch: false,
-//         },
-//         hot: true,
-//         port: 3000,
-//         host: '0.0.0.0'
-//     },
-//     mode: 'development',
-//     module: {
-//         rules: [
-//             {
-//                 test: /\.css$/i,
-//                 use: ['style-loader', 'css-loader?url=false', { loader: 'postcss-loader', options: { postcssOptions: { plugins: postCSSPlugins } } }]
-//             }
-//         ]
-//     }
-// }
