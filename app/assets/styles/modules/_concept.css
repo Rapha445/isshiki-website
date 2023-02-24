@@ -1,7 +1,12 @@
 .concept {
   /*set position and size of the image*/
   &__img {
-    max-width: clamp(21.5rem, 31vw, 27.75rem);
+    max-width: 27.75rem;
     margin-bottom: -31rem;
+
+    @mixin atSmall {
+      max-width: 21.5rem;
+      margin-bottom: -28rem;
+    }
   }
 }

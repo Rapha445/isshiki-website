@@ -6,12 +6,12 @@
   width: calc(100vw - 7.5rem);
   z-index: 2;
   &--desktop {
-    @media (max-width: 550px) {
+    @mixin atSmall {
       visibility: hidden;
     }
   }
   &--smallscreen {
-    @media (min-width: 550px) {
+    @mixin atBig {
       visibility: hidden;
     }
   }
@@ -120,7 +120,7 @@
     padding-bottom: 50px;
     text-align: center;
 
-    @media (max-width: 550px) {
+    @mixin atSmall {
       top: -60px;
     }
 

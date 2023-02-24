@@ -1,7 +1,11 @@
 /* superposes the image with the background at indicated position*/
 .artworks {
   &__img {
-    width: clamp(22rem, 35vw, 31.25rem);
+    width: 31.25rem;
     display: block;
+
+    @mixin atSmall {
+      width: 22rem;
+    }
   }
 }
