@@ -9,23 +9,35 @@
 
 <body class="preload">
     <header class="container container--padding">
-        <nav class="navbar grid grid--3column container--margin-top-3 container--margin-bottom-3 toggle">
-            <ul class="navbar__links flex flex--space-between flex--center-vertically">
+        <nav class="navbar navbar--desktop grid grid--2column container--margin-top-3 container--margin-bottom-3 toggle">
+            <ul class="navbar__links flex flex--space-between flex--end-vertically">
                 <li><a href="./artworks.html">ARTWORKS</a></li>
                 <li><a href="./news.html">NEWS</a></li>
                 <li><a href="./contact.html">CONTACT</a></li>
             </ul>
-            <a class="navbar__logo" href="./index.html"><img src="./assets/images/logo_icon/logo.png" alt="Miyu. I" width="600" height="196"></a>
             <div class="navbar__lang flex flex--center-vertically flex--center-horizontally">
                 <p>JP / EN</p>
             </div>
+        </nav>
+        <nav class="navbar navbar--smallscreen container--margin-top-3 container--margin-bottom-3">
+            <div class="navbar__menu-icon-container">
+                <div class="navbar__menu-icon">
+                    <div class="navbar__menu-icon__middle"></div>
+                </div>
+            </div>
+            <ul class="navbar__menu-content">
+                <li><a href="./artworks.html">ARTWORKS</a></li>
+                <li><a href="./news.html">NEWS</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li class="navbar__lang  navbar__lang--smallscreen"><a href="">JP / EN</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section class="section contact container--margin-top-23 container--padding-bottom-10">
             <img class="background" src="./assets/images/contact/bg-gradient.png" alt="" width="2880" height="1720">
             <h2 class="section__title section__title section__title--margin-bottom-l">Contact</h2>
-            <div class="container container--width-38 grid grid--2column reveal">
+            <div class="container container--width-38 grid grid--2column grid--2column--smallscreen reveal">
                 <img class="contact__img" src="./assets/images/contact/profile-img.png" alt="" width="480" height="480">
                 <div class="contact__text">
                 <p class="section__subtitle">Miyu Isshiki</p>

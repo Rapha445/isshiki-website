@@ -83,20 +83,20 @@
       margin-bottom: 12.5rem;
     }
     &__img1 {
-      max-width: 25rem;
+      width: clamp(12rem, 29vw, 25rem);
       grid-row: 1;
       grid-column: 1;
-      padding-bottom: 6.875rem;
+      padding-bottom: clamp(5.5rem, 8vw, 6.875rem);
     }
     &__img2 {
-      max-width: 25rem;
+      width: clamp(12rem, 29vw, 25rem);
       grid-row: 1;
       grid-column: 1;
       justify-self: flex-end;
       align-self: flex-end;
     }
     &__img3 {
-      max-width: 17.5rem;
+      width: clamp(8rem, 20vw, 17.5rem);
       grid-row: 1;
       grid-column: 1;
       align-self: flex-end;
@@ -113,12 +113,12 @@
       width: 1.875rem;
     }
     &--m {
-      width: 19.063rem;
+      width: clamp(15rem, 40vw, 19.063rem);
     }
   }
   /*styles for the contact button*/
   &__contact {
-    height: 3.75rem;
+    height: clamp(3.3rem, 10vw, 3.75rem);
     border: #333333 solid 1px;
     border-radius: 30px;
     background-color: transparent;
@@ -126,8 +126,8 @@
   /*styles for the order button (round) */
   &__order {
     background-color: #e2cfcf;
-    height: 12.5rem;
-    width: 12.5rem;
+    height: clamp(9.5rem, 25vw, 12.5rem);
+    width: clamp(9.5rem, 25vw, 12.5rem);
     border-radius: 50%;
     text-align: center;
     margin-left: auto;

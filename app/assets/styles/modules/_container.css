@@ -8,10 +8,10 @@
     padding-right: 3.75rem;
   }
   &--width-29 {
-    max-width: 29.688rem;
+    width: clamp(21.5rem, 50vw, 29.688rem);
   }
   &--width-38 {
-    max-width: 38.75rem;
+    width: clamp(21.5rem, 52vw, 38.75rem);
   }
   &--margin-top-3 {
     margin-top: 3.438rem;

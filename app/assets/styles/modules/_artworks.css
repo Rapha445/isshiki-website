@@ -1,7 +1,7 @@
 /* superposes the image with the background at indicated position*/
 .artworks {
   &__img {
-    max-width: 31.25rem;
+    width: clamp(22rem, 35vw, 31.25rem);
     display: block;
   }
 }

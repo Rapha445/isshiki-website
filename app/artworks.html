@@ -8,16 +8,28 @@
 </head>
 <body class="preload">
     <header class="container container--padding">
-        <nav class="navbar grid grid--3column container--margin-top-3 container--margin-bottom-3 toggle">
-            <ul class="navbar__links flex flex--space-between flex--center-vertically">
+        <nav class="navbar navbar--desktop grid grid--2column container--margin-top-3 container--margin-bottom-3 toggle">
+            <ul class="navbar__links flex flex--space-between flex--end-vertically">
                 <li><a href="./artworks.html">ARTWORKS</a></li>
                 <li><a href="./news.html">NEWS</a></li>
                 <li><a href="./contact.html">CONTACT</a></li>
             </ul>
-            <a class="navbar__logo" href="./index.html"><img src="./assets/images/logo_icon/logo.png" alt="Miyu. I" height="196" width="600"></a>
             <div class="navbar__lang flex flex--center-vertically flex--center-horizontally">
                 <p>JP / EN</p>
             </div>
+        </nav>
+        <nav class="navbar navbar--smallscreen container--margin-top-3 container--margin-bottom-3">
+            <div class="navbar__menu-icon-container">
+                <div class="navbar__menu-icon">
+                    <div class="navbar__menu-icon__middle"></div>
+                </div>
+            </div>
+            <ul class="navbar__menu-content">
+                <li><a href="./artworks.html">ARTWORKS</a></li>
+                <li><a href="./news.html">NEWS</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li class="navbar__lang  navbar__lang--smallscreen"><a href="">JP / EN</a></li>
+            </ul>
         </nav>
     </header>
     <main> 
@@ -31,18 +43,13 @@
                 <img class="section__imgdisplay__img3 reveal" src="./assets/images/artworks/img-bg03.jpg" alt="" width="560" height="680">
             </div>
             <img class="artworks__img container reveal" src="./assets/images/artworks/img-middle.jpg" alt="" width="1000" height="1200">
-            <div class="reveal">
-            <p class="section__text section__text--font-big section__text--margin-bottom-s section__text--margin-top-l">こちらにメッセージが入ります。こちらにメッセージが入ります。</p>
-            <p class="section__text section__text--font-big section__text--margin-bottom-s">こちらにメッセージが入ります。こちらにメッセージが入ります。</p>
-            <p class="section__text section__text--font-big">こちらにメッセージが入ります。（５０分字限定） </p>
+        <a href="./contact.html"><div class="reveal section__order flex flex--center-horizontally flex--center-vertically container--margin-top-12 container--margin-bottom-7">
+            <div>
+            <p class="section__title">Order</p>
+            <p class="section__text section__text--space-l section__text--margin-top-12">ご注文について</p>
         </div>
-            <div class="reveal section__order flex flex--center-horizontally flex--center-vertically container--margin-top-12 container--margin-bottom-7">
-                <div>
-                <p class="section__title">Order</p>
-                <p class="section__text section__text--space-l section__text--margin-top-12">ご注文について</p>
-            </div>
-            </div>
-            <div class="reveal">
+        </div></a>
+              <div class="reveal">
             <p class="section__text section__text--font-bigger section__text--space-l section__text--margin-bottom-m">こちらから作品をご覧いただけます</p>
             <a class="section__link section__link--m" href="">
             <div class="section__contact flex flex--center-vertically flex--center-horizontally">

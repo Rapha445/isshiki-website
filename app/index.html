@@ -8,7 +8,7 @@
 </head>
 <body class="preload">
     <header class="container container--padding">
-        <nav class="navbar grid grid--2column container--margin-top-3 container--margin-bottom-3 toggle">
+        <nav class="navbar navbar--desktop grid grid--2column container--margin-top-3 container--margin-bottom-3 toggle">
             <ul class="navbar__links flex flex--space-between flex--end-vertically">
                 <li><a href="./artworks.html">ARTWORKS</a></li>
                 <li><a href="./news.html">NEWS</a></li>
@@ -17,6 +17,19 @@
             <div class="navbar__lang flex flex--center-vertically flex--center-horizontally">
                 <p>JP / EN</p>
             </div>
+        </nav>
+        <nav class="navbar navbar--smallscreen container--margin-top-3 container--margin-bottom-3">
+            <div class="navbar__menu-icon-container">
+                <div class="navbar__menu-icon">
+                    <div class="navbar__menu-icon__middle"></div>
+                </div>
+            </div>
+            <ul class="navbar__menu-content">
+                <li><a href="./artworks.html">ARTWORKS</a></li>
+                <li><a href="./news.html">NEWS</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li class="navbar__lang  navbar__lang--smallscreen"><a href="">JP / EN</a></li>
+            </ul>
         </nav>
         <h1 class="mainvisual flex flex--center-vertically flex--center-horizontally">
             <img class="mainvisual__img" src="./assets/images/logo_icon/logo.png" alt="Miyu I">
@@ -45,7 +58,7 @@
             <img class="section__imgdisplay__img3 reveal" src="./assets/images/top/bg-img02.jpg" alt="">
         </div>
             <div class="section__more flex flex--end-horizontally reveal">
-            <p>VIEW  MORE</p>
+            <a href="./artworks.html"><p>VIEW  MORE</p></a>
             <div class="section__more__line"></div>
         </div>
         </section>
@@ -66,7 +79,7 @@
             </div>
         </div>
             <div class="section__more flex flex--center-horizontally reveal">
-                <p>VIEW  MORE</p>
+                <a href="./news.html"><p>VIEW  MORE</p></a>
                 <div class="section__more__line"></div>
         </section>
         <section class="section container--margin-top-20 container reveal">

@@ -8,16 +8,28 @@
 </head>
 <body class="preload">
     <header class="container container--padding">
-        <nav class="navbar grid grid--3column container--margin-top-3 container--margin-bottom-3 toggle">
-            <ul class="navbar__links flex flex--space-between flex--center-vertically">
+        <nav class="navbar navbar--desktop grid grid--2column container--margin-top-3 container--margin-bottom-3 toggle">
+            <ul class="navbar__links flex flex--space-between flex--end-vertically">
                 <li><a href="./artworks.html">ARTWORKS</a></li>
                 <li><a href="./news.html">NEWS</a></li>
                 <li><a href="./contact.html">CONTACT</a></li>
             </ul>
-            <a class="navbar__logo" href="./index.html"><img src="./assets/images/logo_icon/logo.png" alt="Miyu. I"></a>
             <div class="navbar__lang flex flex--center-vertically flex--center-horizontally">
                 <p>JP / EN</p>
             </div>
+        </nav>
+        <nav class="navbar navbar--smallscreen container--margin-top-3 container--margin-bottom-3">
+            <div class="navbar__menu-icon-container">
+                <div class="navbar__menu-icon">
+                    <div class="navbar__menu-icon__middle"></div>
+                </div>
+            </div>
+            <ul class="navbar__menu-content">
+                <li><a href="./artworks.html">ARTWORKS</a></li>
+                <li><a href="./news.html">NEWS</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+                <li class="navbar__lang  navbar__lang--smallscreen"><a href="">JP / EN</a></li>
+            </ul>
         </nav>
     </header>
     <main>

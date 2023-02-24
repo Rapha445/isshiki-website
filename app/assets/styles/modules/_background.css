@@ -4,6 +4,7 @@
   bottom: 0;
   left: 0;
   z-index: -1;
+  min-height: 860px;
   /*Background image only fills a set height*/
   &--fill {
     height: 62.5rem;

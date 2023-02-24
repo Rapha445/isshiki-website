@@ -5,6 +5,16 @@
   top: 0;
   width: calc(100vw - 7.5rem);
   z-index: 2;
+  &--desktop {
+    @media (max-width: 550px) {
+      visibility: hidden;
+    }
+  }
+  &--smallscreen {
+    @media (min-width: 550px) {
+      visibility: hidden;
+    }
+  }
   &__links {
     max-width: 18.75rem;
   }
@@ -20,9 +30,105 @@
     border: #333333 solid 1px;
     border-radius: 14px;
     align-self: center;
+    &--smallscreen {
+      height: 1rem;
+      width: 5rem;
+      margin: auto;
+    }
   }
   &__logo {
     max-width: 14rem;
     justify-self: center;
+  }
+  /*set position of the hamburger menu icon*/
+  &__menu-icon-container {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+  }
+  /*styles of the hamburger menu icon*/
+  &__menu-icon {
+    width: 40px;
+    height: 28px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 4px;
+      background-color: #333333;
+      transform-origin: 0% 0%;
+      transition: transform 0.3s ease-out;
+      border-radius: 2px;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 40px;
+      height: 4px;
+      background-color: #333333;
+      transition: all 0.3s ease-out;
+      transform-origin: 0 50%;
+      border-radius: 2px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 40px;
+      height: 4px;
+      background-color: #333333;
+      transform-origin: 0% 100%;
+      transition: transform 0.3s ease-out;
+      border-radius: 2px;
+    }
+
+    &--close-x {
+      &::before {
+        transform: rotate(45deg) scaleX(1.25) translateY(-7px);
+      }
+
+      .navbar__menu-icon__middle {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+
+      &::after {
+        transform: rotate(-45deg) scaleX(1.25) translateY(7px);
+      }
+    }
+  }
+
+  &__menu-content {
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 0.3s ease-out;
+    position: relative;
+    z-index: -10;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    @media (max-width: 550px) {
+      top: -60px;
+    }
+
+    &--is-visible {
+      padding-top: 50px;
+      opacity: 1;
+      z-index: 1;
+      transform: scale(1);
+    }
   }
 }

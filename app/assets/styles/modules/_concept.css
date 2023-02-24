@@ -1,10 +1,7 @@
 .concept {
   /*set position and size of the image*/
   &__img {
-    position: absolute;
-    max-width: 27.75rem;
-    left: 50%;
-    top: 100%;
-    margin-left: -13.875rem;
+    max-width: clamp(21.5rem, 31vw, 27.75rem);
+    margin-bottom: -31rem;
   }
 }

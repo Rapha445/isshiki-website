@@ -3,6 +3,12 @@
   display: grid;
   &--2column {
     grid-template-columns: 1fr 1fr;
+    &--smallscreen {
+      @media (max-width: 550px) {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+      }
+    }
   }
   &--3column {
     grid-template-columns: 1fr 1fr 1fr;
